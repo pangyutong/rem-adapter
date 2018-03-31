@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// 适配函数 
+// 自调用 直到遍历到 数组最后一个  停止
+.adapterFuc(@index) when (@index <= @len){
+  @media (min-width: extract(@deviceList,@index)) {
+    html {
+      font-size: extract(@deviceList,@index)/@psdWidth*@baseFontSize;
+    }
+  }
+  .adapterFuc(@index + 1);
+}
