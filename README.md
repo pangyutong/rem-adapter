@@ -1,4 +1,4 @@
-# less-adapter
+# rem-adapter
   rem屏幕适配方案
     主要思路：
       通过rem的形式结合媒体查询  控制页面的缩放比例唯一  适配流行终端等比缩放
